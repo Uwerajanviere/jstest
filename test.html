@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="test.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body >
+<p id="demo" ></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+
+<script>
+
+    let x="my name is";
+    x+="uwera janviere";
+    let carname="volvo";
+    let pi=(3.14+2)*6;
+let person="uwera";
+let answer="yes i am!";
+document.getElementById("demo").innerHTML= pi + "<br>" +person   +"<br>" + answer + "<br>"+carname + "<br>"+x+"<br>"+ typeof pi ;
+</script>
+<script>
+function myfunction( a,b){
+return a+b;
+}
+
+let result=myfunction(2, 3);
+document.getElementById("demo2").innerHTML=result;
+
+</script>
+<script>
+const person1 = {
+firtname: "uwera",
+lastname:"janviere",
+age:20,
+fullname: function(){
+
+    return this.firtname+" "+ this.lastname;
+}
+};
+document.getElementById("demo3").innerHTML=  "my name is"+" "+person1.fullname()+ "<br>"+"<br>"+"and i am "+person1.age+"years old";
+ 
+
+const student ={
+    name:"mary",
+    age:23,
+    program:"computer enginnering",
+ };
+
+doucment.getElementById("demo").innerHTML=student.name+" "+student.age+"<br>" + student.program;
+
+</script>
+   
+
+</body>
+</html>
